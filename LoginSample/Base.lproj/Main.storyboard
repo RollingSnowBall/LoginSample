@@ -228,8 +228,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환영합니다 ! " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZM-dV-J2b">
-                                <rect key="frame" x="121" y="432.5" width="172.5" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환영합니다 ! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZM-dV-J2b">
+                                <rect key="frame" x="24" y="432.5" width="366" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -245,10 +245,23 @@
                                     <action selector="tapLogoutBtn:" destination="htp-XV-BTY" eventType="touchUpInside" id="knL-Mc-beu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqp-Uz-Tly">
+                                <rect key="frame" x="156.5" y="549" width="101" height="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="비밀번호 변경"/>
+                                <connections>
+                                    <action selector="tapResetPassword:" destination="htp-XV-BTY" eventType="touchUpInside" id="g4C-V3-dBe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="67y-jX-wwU"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="67y-jX-wwU" firstAttribute="trailing" secondItem="OZM-dV-J2b" secondAttribute="trailing" constant="24" id="5gY-QY-kWv"/>
+                            <constraint firstItem="Zqp-Uz-Tly" firstAttribute="centerX" secondItem="67y-jX-wwU" secondAttribute="centerX" id="CIc-5E-k2o"/>
+                            <constraint firstItem="OZM-dV-J2b" firstAttribute="leading" secondItem="67y-jX-wwU" secondAttribute="leading" constant="24" id="OGo-0r-vgM"/>
+                            <constraint firstItem="Zqp-Uz-Tly" firstAttribute="top" secondItem="mdG-XY-zsK" secondAttribute="bottom" constant="20" id="bvo-VF-lj0"/>
                             <constraint firstItem="OZM-dV-J2b" firstAttribute="centerX" secondItem="67y-jX-wwU" secondAttribute="centerX" id="gox-g1-UfD"/>
                             <constraint firstItem="OZM-dV-J2b" firstAttribute="centerY" secondItem="67y-jX-wwU" secondAttribute="centerY" id="kVs-SY-t6A"/>
                             <constraint firstItem="mdG-XY-zsK" firstAttribute="centerX" secondItem="67y-jX-wwU" secondAttribute="centerX" id="xPr-Bk-1SK"/>
@@ -256,6 +269,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ResetPwdBtn" destination="Zqp-Uz-Tly" id="VRT-9W-ju2"/>
                         <outlet property="welcomeLabel" destination="OZM-dV-J2b" id="1GT-LJ-w8w"/>
                     </connections>
                 </viewController>

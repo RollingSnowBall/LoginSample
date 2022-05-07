@@ -62,7 +62,6 @@
 				3FCA5985BDCD1BCFDC1B3E94 /* Pods-LoginSample.debug.xcconfig */,
 				BF9087AC9FC67F9C739AC0FA /* Pods-LoginSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

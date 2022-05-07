@@ -7,5 +7,6 @@ target 'LoginSample' do
 
   # Pods for LoginSample
   pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 
 end
